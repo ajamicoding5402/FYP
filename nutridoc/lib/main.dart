@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import './screens/switcher_screen.dart';
 import './screens/login_screen.dart';
 import './screens/home_screen.dart';
+import './screens/gamification_Screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => SwitcherScreen(),
         LoginScreen.routeName: (context) => LoginScreen(),
         HomeScreen.routeName: (context) => const HomeScreen(),
+        GamificationScreen.routeName: (context) => GamificationScreen(),
       },
     );
   }
